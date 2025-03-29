@@ -1,0 +1,922 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #faf9f9;
+}
+/* ----------start of section header&intro of elolmator website -------- */
+.container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.intro{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/2024_Mercedes-Benz_CLE_Coupe_6_16001-1024x683.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(5, 5, 5, 0.5);
+}
+.intro-header{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    background-color: rgba(7, 7, 7, 0.712);
+    z-index: 10;
+}
+.intro-headerr-icon{
+    position:absolute ;
+}
+.intro-header-ul{
+    float: right;
+    margin: 15px 15px;
+    position: relative;
+}
+.intro-header-ul li{
+    display: inline;
+    list-style: none;
+    margin-right: 25px;
+    
+}
+.intro-header-ul li a{
+    text-decoration: none;
+    color: #fff;
+    position: relative;
+}
+.blogdrop{
+    position: relative;
+}
+.drop{
+    position: absolute;
+    width: 150px;
+    height: 120px;
+    padding: 10px ;
+    background-color: rgb(26, 20, 20);
+    color:#fff;
+    text-align: center;
+    left: -15px;
+    top: 150%; 
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 50;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    
+}
+.drop li{
+    display: block;
+    line-height: 30px;
+}
+ .blogdrop:hover .drop{
+    visibility: visible;
+    opacity: 1;
+
+}
+.intro-ul li a::after{
+    position: absolute;
+    top: 20px;
+    content: "";
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0;
+}
+.intro-ul li a:hover::after{
+    width: 100%;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+
+.intro-header-search{
+    width: 300px;
+    height: 30px;
+    margin: 10px 70px;
+    border-radius: 15px;
+    border: 0;
+}
+.gl{
+    position: absolute;
+    left: 80px;
+    top:  17px;
+}
+.ho{
+ position: absolute;
+ left: 15px;
+ top: 10px;
+ font-size:30px;
+ color: #fff;
+
+}
+/* //////////end of header&overlay&lists////// */
+.intro-maintitle{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: #fff;
+}
+.intro-maintitle-h1{
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+.intro-maintitle-p1{
+    width: 800px;
+    margin-left: 80px;
+    font-size: 17px;
+    padding: 5px;
+    letter-spacing: 2px;
+}
+.btn{
+    font-size: 20px;
+    border: 0;
+    border-radius: 15px;
+    text-transform: capitalize;
+    padding: 20px;
+    margin: 5px 5px;
+    cursor: pointer;
+}
+.btn2{
+    background-color: rgb(12, 10, 10);
+    color: #fff;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+/* ---------------end of section header&intro of elolmator website----------------- */
+
+/* ----------start of about section------------- */
+.about-title1{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 70px;
+}
+.about-line{
+    width: 90px;
+    border: 2px solid rgb(2, 2, 2);
+    margin: auto;
+    margin-top: 5px;
+}
+.about-divs{
+    float: left;
+    width: 350px;
+    height: 300px;
+    margin-top: 80px;
+    margin-left: 80px;
+    text-align: center;
+    border: 1px solid black;
+    position: relative;
+    border-radius: 10px;
+}
+.about-icon{
+    font-size: 40px;
+    padding-top: 15px;
+}
+.about-h2{
+    padding-top: 15px;
+    font-size: 30px;
+}
+.about-p{
+    margin-top: 15px;
+    font-size: 20px;
+    padding: 10px;
+    text-transform: capitalize;
+    color: #222222;
+}
+.about-link{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 20px;
+    display: block;
+    margin-top: 30px;
+}
+.a1{
+    margin-top: 50px;
+}
+.a2{
+    margin-top: 75px;
+}
+.about-divs::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(8, 7, 7);
+    border-radius: 10px;
+    opacity: 0;
+    z-index: -2;
+}
+.about-divs:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.about-divs:hover h2{
+    color: #dddddd;
+}
+.about-divs:hover p{
+    color:black;
+}
+.about-divs:hover a{
+    color: #e4e2e2;
+}
+/* --------------end of about section--------- */
+
+/*--------------------------- start of car gallery section-------------------- */
+
+.cargallery{
+    width: 100%;
+    height: 100%;
+    background-color: #252525;
+    overflow: auto;
+    color: #fff;
+}
+.cargallery-h2{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 50px;
+}
+.cargallery-line{
+    width: 110px;
+    border: 2px solid #fffcfc;
+    margin: auto;
+    margin-top: 5px;
+}
+.cargallery-img{
+    float: left;
+    margin-left: 200px;
+    margin-top: 30px;
+    position: relative;
+}
+.cargallery-div1{
+    position: absolute;
+    background-color: rgba(5, 5, 5, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.2s;
+    text-align: center;
+    visibility: hidden;
+}
+.cargallery-h3{
+    text-transform: uppercase;
+    font-size: 30px;
+    padding-top: 30px;
+}
+.cargallery-p{
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 25px;
+}
+.he1{
+    width: 40px;
+    height: 30px;
+    margin-top:15px ;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000000;
+}
+.c1{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+    margin-left: 5px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000000; 
+}
+.cargallery-img:hover  .cargallery-div1{
+    visibility: visible;
+}
+.cargallery-img2{
+    float: left;
+    margin-top: 30px;
+    margin-left: 30px;
+    position: relative;
+}
+.cargallery-img2:hover .cargallery-div1{
+    visibility: visible;
+}
+/* -----------------end of car gallery section--------- */
+.services-title{
+    text-align: center;
+    padding-top: 60px;
+    font-size: 50px;
+}
+.services-line{
+    width: 110px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 5px;
+}
+.services-divs{
+    overflow: auto;
+    margin: auto;
+    width: 80%;
+}
+.services-div1{
+    float: left;
+    width: 30%;
+    margin: 2% 0%;
+    position: relative;
+}
+.services-component{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 15px 25px ;
+    border-radius: 10px;
+    position: relative;
+    
+}
+.car{
+    position: absolute;
+    left: 10px;
+    top: 20px;
+    font-size: 30px;
+    color: #000000;
+}
+.services-div1-title1{
+    font-size: 25px;
+    padding: 2px 30px;
+}
+.services-div1-p1{
+    padding-left: 30px;
+    font-size: 20px;
+    color: #858383;
+    
+}
+.services-component::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(8, 7, 7);
+    border-radius: 10px;
+    opacity: 0;
+    z-index: -2;
+}
+.services-component:hover::after{
+    width: 300px;
+    height: 200px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.services-component:hover h2{
+    color: #dfd9d9;
+}
+.services-component:hover p{
+    color: #000000;
+}
+.div2{
+    margin: 2% 5%;
+}
+/* ---------------------------end of services section-------------------------------- */
+
+/* ------------start of why us section-------------- */
+.whyus{
+    height: 100%;
+    overflow: auto;
+    padding-top:100px ;
+    margin-left: 100px;
+    
+    
+}
+.whyus-mainpoints{
+    width: 50%;
+    float: left;
+}
+.whyus-h2{
+    font-size: 30px;
+    font-weight: bolder;
+}
+.whyus-line{
+    width: 60px;
+    border: 2px solid black;
+    margin-top: 10px;
+}
+.whyus-p1{
+    width: 350px;
+    padding-top: 40px;
+    color: #363636;
+    font-weight: bold;
+}
+.whyus-points-p{
+    padding-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #363636;
+}
+.check{
+    color: #000000;
+}
+.whyus-img-list{
+    width: 50%;
+    float: left;
+    padding-left: 100px;
+    padding-right: 140px;
+}
+.whyus-list{
+    list-style: none;
+    text-align: center;
+}
+.whyus-list li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 15px 10px;
+    display: inline-block;
+    background-color: #575757;
+}
+.whyus-list li.point{
+    background-color: #000000;
+}
+.whyus-list li:hover{
+    background-color: #000000;
+}
+/* ----------end of why us section----------------- */
+
+/* --------------start of Fun Facts section----------- */
+.fun{
+    height: 80%;
+}
+.funfacts{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/8054411-1718236612.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: relative;
+    margin-top: 40px;
+}
+.funfacts-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(5, 5, 5, 0.5) ;
+}
+.funfacts-item{
+    width: 80%;
+    margin: auto;
+}
+.funfacts-item-info{
+    padding-top: 150px;
+    overflow: auto;
+}
+.funfacts-item-info1{
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+.icon22{
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+.funfacts-h3{
+    color: #fff;
+    font-size: 25px;
+}
+.funfacts-p{
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+/* ----------------------------end of fun facts section ---------- */
+
+/* --------------------------start of pricing section----------------------------- */
+.pricing{
+    padding-top: 40px;
+    text-align: center;
+}
+.pricing-title{
+    font-size: 40px;
+    font-weight: bolder;
+}
+.pricing-line{
+    width: 90px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 10px;
+}
+.pricing-container{
+    width: 80%;
+    margin: auto;
+}
+.pricing-divs{
+    overflow: auto;
+    padding: 50px;
+}
+.pricing-div1{
+    float: left;
+    width: 30%;
+    border: 1px solid black;
+    padding: 30px 15px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+.pricing-div1-p{
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000000;
+}
+.pricing-div1-pro{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid black;
+    margin: 20px auto;
+    padding: 20px 0;
+}
+.pricing-per{
+    font-size: 35px;
+}
+.pricing-month{
+    text-transform:uppercase ;
+    font-weight: bold;
+}
+.pricing-list{
+    list-style: none;
+    text-transform: capitalize;
+}
+.pricing-list li{
+    padding: 10px 0;
+    font-weight: bold;
+}
+.pricing-btn{
+    width: 170px;
+    height: 30px;
+    border: 2px solid black;
+    margin-top: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.pricing-div1::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgb(8, 7, 7);
+    transition: 0.5s;
+    opacity: 0.5;
+    border-radius: 10px;
+    z-index: -1;
+}
+.pricing-div1:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.pricing-div1:hover .pricing-div1-p{
+    color: #fff;
+    
+}
+.pricing-div1:hover .pricing-div1-pro{
+    border: 2px solid white;
+    
+}
+.prdiv2{
+    margin: 0 5%;
+}
+/* ----------end of pricing section ------------- */
+
+/* --------------start of team1 section-------------- */
+.container-team1{
+    height: 80%;
+}
+.team1{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/Brabus-600-Mercedes-Maybach-S580-77.jpg);
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin-top: 140px;
+}
+.team1-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color:rgba(5, 5, 5, 0.5) ;
+}
+.team1-container{
+    width: 80%;
+    margin: auto;
+}
+.team1-content{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.team1-person{
+    text-transform: capitalize;
+    padding: 110px 40px 10px 150px;
+    position: relative;
+    line-height: 1.5;
+}
+.team1-person img{
+    border-radius: 50%;
+    position: absolute;
+    top: 110px;
+    left: 40px;
+    
+}
+.team1-person-h3{
+    font-size: 40px;
+    color: #ecebeb;
+}
+.team1-person span{
+    font-size: 20px;
+    color: #e9e8e8;
+}
+.team1-person-p{
+    line-height: 1.5;
+    text-transform: capitalize;
+    color: #e4e3e3;
+    margin: 20px 50px;
+    font-size: 18px;
+}
+/* ---------------end of  team1 section ------------ */
+
+/* ---------------------start of our team section-------------- */
+.ourteam-title{
+    padding-top: 40px;
+    text-align: center;
+    margin: auto;
+}
+.ourteam-h2{
+    text-transform: capitalize;
+    font-size: 40px;
+}
+.ourteam-line{
+    width: 90px;
+    border: 2px solid black;
+    margin-top: 10px;
+    margin: auto;
+}
+.ourteam-container{
+    width: 80%;
+    margin: auto;
+}
+.ourteam{
+    overflow: auto;
+    height: 100vh;
+    margin-top: 50px;
+}
+.ourteam-memmber{
+    float: left;
+    width: 30%;
+    text-align: center;
+    padding: 18px 14px;
+    position: relative;
+    border-radius: 10px;
+    background-color:rgb(70, 69, 69) ;
+}
+.ourteam-img{
+    width: 85%;
+    margin: auto;
+    position: relative;
+    background-color: #363636;
+}
+.ourteam-icons{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+}
+.ourteam-icons a{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background-color: #0e0c0c;
+    color: #fff;
+    margin-left: auto;
+}
+.ourteam-icons a i{
+    line-height: 40px;
+}
+.ourteam-memmber:hover .ourteam-icons{
+    visibility: visible;
+}
+.ourteam-info-h2{
+    text-transform: capitalize;
+    color: #fff;
+    padding: 12px 0px;
+}
+.ourteam-info-p{
+    text-transform: uppercase;
+    color: #b1afaf;
+    font-weight: bold;
+}
+.ourteam-memmber::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: #08070783 ;
+    border-radius: 10px;
+}
+.ourteam-memmber:hover::after{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+.ourteam-memmber:hover h2{
+    color: #cecccc;
+}
+.ourteam-memmber:hover p{
+    color: #000000;
+}
+.mem2{
+    margin: 0 5%;
+}
+/* -----------end of our team section---------- */
+/*------------------- start of blog section--------------- */
+.blog-title{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+}
+.blog-line{
+    width: 100px;
+    border: 2px solid black;
+    margin: auto;
+}
+.blog-container{
+    width: 80%;
+    margin: auto;
+}
+.blog{
+    margin-top: 50px;
+    overflow: auto;
+}
+.blog-iteams{
+    width: 30%;
+    text-align: center;
+    float: left;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 50px;
+}
+.blog-iteams img{
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.blog-icons{
+    margin-bottom: 15px;
+}
+.blog-icons ul{
+    list-style: none;
+    margin-top: 25px;
+}
+.blog-icons ul li{
+    display: inline;
+    margin-right: 15px;
+    font-weight: bold;
+    color: #252424;
+}
+.blog-icons-h3{
+    margin: 15px 0px; 
+}
+.blog-icons-p{
+    padding: 0px 15px;
+    margin-bottom: 25px;
+    color: #252525;
+}
+.blog-icons-a{
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+
+}
+.blog-iteams::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color:rgb(8, 7, 7);
+    border-radius: 10px;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: -1;
+}
+.blog-iteams:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.blog-iteams:hover h3{
+    color: #a5a3a3;
+}
+.blog-iteams:hover p{
+    color: #000000;
+}
+.blog-icons ul li a i{
+    color: #000000;
+}
+.blog-iteams:hover li{
+    color: #000000;
+}
+.iteam2222{
+    margin: 0 5%;
+}
+.p2555{
+    padding-bottom: 20px;
+}
+/* ---------------end of blog section ------------------ */
+/* ---------------------start of footer section------------- */
+.footer{
+    width: 100%;
+    padding: 20px 0;
+    margin-top:100px;
+    margin-bottom: 0;
+    background-color: #0e0c0c;
+}
+.footer-iteams{
+    margin: auto;
+    height: 300px;
+    width: 40%;
+    text-align: center;
+}
+.footer-img img{
+    border-radius: 10px;
+}
+.footer-ul{
+    margin-top: 20px;
+}
+.footer-ul ul{
+    list-style: none;
+}
+.footer-ul ul li{
+display: inline-block;
+background-color: #141414;
+color: #fff;
+font-size: 30px;
+padding-top: 15px;
+margin-left: 10px;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+position: relative;
+}
+.footer-ul ul li:hover{
+    background-color: #fff;
+    color: #000000;
+}
+.footer-p{
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    padding-top: 10px;
+}
+
